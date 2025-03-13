@@ -1,56 +1,100 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #333;
-    max-width: 800px;
-    margin: 0 auto;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    border-bottom: 2px solid #ddd;
 }
 
-header, section, footer {
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.profile-pic {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-h1 {
-    font-size: 2.2rem;
-    margin-bottom: 5px;
-}
-
-h2 {
-    font-size: 1.6rem;
-    border-bottom: 2px solid #e2e2e2;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-}
-
-ul {
+nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
 }
 
-ul li {
-    margin: 10px 0;
-}
-
-ul li a {
+nav a {
     text-decoration: none;
-    color: #0077cc;
-    transition: color 0.3s ease;
+    color: #555;
 }
 
-ul li a:hover {
-    color: #005799;
+.home-section {
+    background: url('assets/home-bg.png') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    margin-bottom: 50px;
+}
+
+.home-section h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 20px;
+}
+
+section {
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-item {
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-item:hover {
+    background-color: #f7f7f7;
 }
 
 footer {
-    font-size: 0.9rem;
-    color: #777;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #ddd;
+}
+
+footer a {
+    text-decoration: none;
+    color: #555;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .home-section h2 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-list {
+        padding: 0 10px;
+    }
 }
