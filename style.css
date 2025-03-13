@@ -95,6 +95,35 @@ section {
     text-decoration: underline;
 }
 
+.certification-item {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.certification-item img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.certification-item img:hover {
+    transform: translateY(-5px);
+}
+
+.certification-item a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #0057ff;
+    text-decoration: none;
+}
+
+.certification-item a:hover {
+    text-decoration: underline;
+}
+
 footer {
     text-align: center;
     padding: 20px;
